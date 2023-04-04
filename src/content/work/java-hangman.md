@@ -1,5 +1,5 @@
 ---
-title: java-hangman
+title: "java-hangman"
 publishDate: 2023-03-08 00:00:00
 img: /assets/hangman-game.png
 img_alt: A fresh playthrough of Hangman on Asian difficulty, with topic hidden and score of 0

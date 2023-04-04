@@ -1,5 +1,5 @@
 ---
-title: Bootleg Bird
+title: "Bootleg Bird"
 publishDate: 2022-08-10 00:00:00
 img: /assets/bootleg-bird.png
 img_alt: The default screen of Bootleg Bird (a Flappy Bird clone) in 900x1600 resolution
