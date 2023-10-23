@@ -47,12 +47,12 @@ const { Content } = await entry.render();
 			<main class="wrapper">
 				<div class="stack gap-10 content">
 					{entry.data.img && <img src={entry.data.img} alt={entry.data.img_alt || ''} />}
-					<div class="content">
+					<div class="content prose prose-teal dark:prose-invert max-w-none">
 						<Content />
 					</div>
           
-          <CallToAction href={entry.data.href}>
-						View on Github
+          <CallToAction href={entry.data.href || '/404'}>
+						View on GitHub
 						<Icon icon="github-logo" size="1.2em" />
 					</CallToAction>
 				</div>

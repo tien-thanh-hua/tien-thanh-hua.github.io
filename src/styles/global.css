@@ -219,7 +219,7 @@
   --outline-variant: var(--outline-variant-light);
   --scrim: var(--scrim-light);
 
-	--link-color: var(--accent-dark);
+	--link-color: var(--primary-light);
 
 	/* Gradients */
 	--gradient-stop-1: var(--accent-light);
@@ -487,7 +487,7 @@
   --outline-variant: var(--outline-variant-dark);
   --scrim: var(--scrim-dark);
 
-	--link-color: var(--accent-dark);
+	--link-color: var(--primary-dark);
 
 	--gradient-stop-1: var(--accent-light);
 	--gradient-subtle: linear-gradient(150deg, var(--gray-900) 19%, var(--gray-999) 81%);
