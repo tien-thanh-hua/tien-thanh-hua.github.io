@@ -1,9 +1,13 @@
-<div class="pill flex px-4 py-2 gap-2 bg-accent-light text-gray-800 dark:bg-accent-dark dark:text-accent-light text-lg font-semibold"><slot /></div>
+<div
+  class="pill flex px-4 py-2 gap-2 bg-primary-light text-on-primary-light dark:bg-primary-container-dark dark:text-on-primary-container-dark text-lg font-semibold"
+>
+  <slot />
+</div>
 
 <style>
-	.pill {
-		border-radius: 999rem;
-		line-height: 1.35;
-		white-space: nowrap;
-	}
+  .pill {
+    border-radius: 999rem;
+    line-height: 1.35;
+    white-space: nowrap;
+  }
 </style>

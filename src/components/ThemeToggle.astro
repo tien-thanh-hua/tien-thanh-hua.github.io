@@ -1,12 +1,12 @@
 ---
-import Icon from './Icon.astro';
+import { MoonStars, Sun } from '@phosphor-icons/react';
 ---
 
 <theme-toggle>
 	<button>
 		<span class="sr-only">Dark theme</span>
-		<span class="icon light"><Icon icon="sun" /></span>
-		<span class="icon dark"><Icon icon="moon-stars" /></span>
+		<span class="icon light"><Sun size={16} /></span>
+		<span class="icon dark"><MoonStars size={16} /></span>
 	</button>
 </theme-toggle>
 
@@ -37,12 +37,13 @@ import Icon from './Icon.astro';
 		z-index: -1;
 		position: absolute;
 		inset: 0;
-		background-color: var(--accent-regular);
+		background-color: var(--primary-light);
 		border-radius: 999rem;
 	}
 
 	:global(.dark) .icon.light::before {
 		transform: translateX(100%);
+    background-color: var(--primary-dark);
 	}
 
 	:global(.dark) .icon.dark,
