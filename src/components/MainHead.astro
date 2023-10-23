@@ -1,5 +1,12 @@
 ---
 import '../styles/global.css';
+import '../styles/material-theme/theme.css';
+import '../styles/material-theme/theme.dark.css';
+import '../styles/material-theme/theme.light.css';
+import '../styles/material-theme/tokens.css';
+import '../styles/material-theme/colors.module.css';
+import GoogleTagManager from './GoogleTagManager.astro';
+import MicrosoftClarity from './MicrosoftClarity.astro';
 
 interface Props {
 	title?: string | undefined;
@@ -7,8 +14,8 @@ interface Props {
 }
 
 const {
-	title = "Tien-Thanh Hua's Portfolio",
-	description = 'The personal site of Tien-Thanh Hua',
+	title = "Tien-Thanh Hua | Full-Stack Developer",
+	description = 'Creative developer with a passion for crafting beautiful websites.',
 } = Astro.props;
 ---
 
@@ -21,10 +28,7 @@ const {
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-	href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,700;1,400&family=Rubik:wght@500;600&display=swap"
-	rel="stylesheet"
-/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500..800">
 
 <script is:inline>
 	// This code is inlined in the head to make dark mode instant & blocking.
@@ -35,14 +39,17 @@ const {
 		return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 	};
 	const isDark = getThemePreference() === 'dark';
-	document.documentElement.classList[isDark ? 'add' : 'remove']('theme-dark');
+	document.documentElement.classList[isDark ? 'add' : 'remove']('dark');
 
 	if (typeof localStorage !== 'undefined') {
 		// Watch the document element and persist user preference when it changes.
 		const observer = new MutationObserver(() => {
-			const isDark = document.documentElement.classList.contains('theme-dark');
+			const isDark = document.documentElement.classList.contains('dark');
 			localStorage.setItem('theme', isDark ? 'dark' : 'light');
 		});
 		observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
 	}
 </script>
+
+<MicrosoftClarity />
+<GoogleTagManager />

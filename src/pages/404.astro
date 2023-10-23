@@ -1,10 +1,20 @@
 ---
-import Hero from '../components/Hero.astro';
-import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from "../components/Hero.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<BaseLayout title="Not Found" description="404 Error — this page was not found">
-	<Hero 
-    title="Oh No, Page Not Found..." 
-    tagline="Maybe there was a typo in the address bar, or the page you're looking for has been wiped off the Internet 😥" />
+<BaseLayout
+  title="Tien-Thanh Hua | Not Found"
+  description="404 Error — page not found"
+>
+  <Hero
+    title="Oh No, Page Not Found..."
+    tagline="Either there was a typo in the address bar, or the page you're looking for is gone for good 😥"
+  />
+  <div class="mx-auto mt-6 text-lg">
+    <p>
+      In that case, why not take a look at my
+      <a href="/about">About</a> page?
+    </p>
+  </div>
 </BaseLayout>
