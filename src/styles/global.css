@@ -23,7 +23,7 @@
 	--accent-subtle-overlay: var(--accent-overlay);
 	--accent-text-over: var(--gray-999);
 
-	--link-color: var(--accent-regular);
+	--link-color: var(--accent-dark);
 
 	/* Gradients */
 	--gradient-stop-1: var(--accent-light);
@@ -66,14 +66,14 @@
 	/* Fonts */
 	--font-system: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
 		'Open Sans', Arial, sans-serif;
-	--font-body: 'Public Sans', var(--font-system);
-	--font-brand: 'Manrope ExtraBold', var(--font-system);
+	--font-body: 'Manrope', var(--font-system);
+	--font-brand: 'Manrope', var(--font-system);
 
 	/* Transitions */
 	--theme-transition: 0.2s ease-in-out;
 }
 
-:root.theme-dark {
+:root.dark {
 	--gray-0: #ffffff;
 	--gray-50: #f3f4f7;
 	--gray-100: #e3e6ee;
@@ -93,7 +93,7 @@
 	--accent-dark: #97DAD0;
 	--accent-overlay: hsla(182, 89%, 67%, 0.33);
 	--accent-subtle-overlay: hsla(191, 81%, 36%, 0.33);
-	--accent-text-over: var(--gray-0);
+	--accent-text-over: var(--gray-900);
 
 	--link-color: var(--accent-dark);
 
@@ -143,6 +143,7 @@ img {
 
 a {
 	color: var(--link-color);
+  font-weight: 800;
 }
 
 h1,
