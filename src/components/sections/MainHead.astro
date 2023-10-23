@@ -1,12 +1,12 @@
 ---
-import '../styles/global.css';
-import '../styles/material-theme/theme.css';
-import '../styles/material-theme/theme.dark.css';
-import '../styles/material-theme/theme.light.css';
-import '../styles/material-theme/tokens.css';
-import '../styles/material-theme/colors.module.css';
-import GoogleTagManager from './GoogleTagManager.astro';
-import MicrosoftClarity from './MicrosoftClarity.astro';
+import '@styles/global.css';
+import '@styles/material-theme/theme.css';
+import '@styles/material-theme/theme.dark.css';
+import '@styles/material-theme/theme.light.css';
+import '@styles/material-theme/tokens.css';
+import '@styles/material-theme/colors.module.css';
+import GoogleTagManager from '@imports/GoogleTagManager.astro';
+import MicrosoftClarity from '@imports/MicrosoftClarity.astro';
 
 interface Props {
 	title?: string | undefined;
@@ -25,6 +25,7 @@ const {
 <meta name="generator" content={Astro.generator} />
 <title>{title}</title>
 
+<!-- Page icon used on browser tabs -->
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

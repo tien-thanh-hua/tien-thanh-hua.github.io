@@ -1,6 +1,6 @@
 ---
-import Icon, { Props as IconProps } from './Icon.astro';
-import ThemeToggle from './ThemeToggle.astro';
+import Icon, { Props as IconProps } from '../Icon.astro';
+import ThemeToggle from '../ThemeToggle.astro';
 
 /** Main menu items */
 const textLinks: { label: string; href: string }[] = [
@@ -286,9 +286,14 @@ const iconLinks: { label: string; href: string; icon: IconProps['icon'] }[] = [
 		}
 
 		.link.active {
-			color: var(--accent-text-over);
-			background-color: var(--accent-dark);
+			color: var(--on-primary-light);
+			background-color: var(--primary-light);
 		}
+
+    :global(.dark) .link.active {
+      color: var(--on-primary-dark);
+      background-color: var(--primary-dark);
+    }
 
 		.menu-footer {
 			--icon-padding: 0.375rem;
