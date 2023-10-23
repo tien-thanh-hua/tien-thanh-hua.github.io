@@ -3,6 +3,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 import ContactCTA from '../components/sections/ContactCTA.astro';
 import Hero from '../components/sections/Hero.astro';
+import CallToAction from '@components/CallToAction.astro';
+import { ReadCvLogo } from '@phosphor-icons/react';
 ---
 
 <BaseLayout title="Tien-Thanh Hua | About" description="About Tien-Thanh">
@@ -10,7 +12,7 @@ import Hero from '../components/sections/Hero.astro';
 		<main class="wrapper about">
 			<Hero
 				title="About Me"
-				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
+				tagline="A creative full-stack developer who crafts beautiful and accessible websites."
 			>
 				<img
 					width="1553"
@@ -22,36 +24,53 @@ import Hero from '../components/sections/Hero.astro';
 
 			<section>
 				<h2 class="section-title">Background</h2>
-				<div class="content">
+				<div class="content stack gap-3">
 					<p>
-						Where to start, where to start...<br><br>
-            Right, of course... Hello there, kind stranger!
-						I am a creative developer based in Can Tho, Vietnam. I like to make websites
-            and applications that are both efficient and good-looking. It is what drives me to
-            pursue a Software Engineering career while also self-studying graphics design.
-					</p>
+            I am interested in the intersection of creative design and development. As such, I often spend time looking for inspirations of functional and visually pleasing websites.
+          </p>
+          <p>
+            My strength lies in the ability to quickly adapt to new environments and technologies. While my focus is on front-end development and UX/UI design, I am also fit to do back-end development, quality assurance, and business analysis.
+          </p>
 					<p>
-						I have a keen eye for details, so being meticulous is what I am good at. I also value
-            time and efficiency, so the things I make look good without taking too much time.
+						Whenever not at work, I spend time with my family and friends. I also enjoy playing video games, watching animes, and listening to music (of all genres, so don't ask me my favorite one 😅). Sounds cliché, but it's true.
 					</p>
 				</div>
 			</section>
 			<section>
 				<h2 class="section-title">Education</h2>
 				<div class="content">
-					<p>FPT University, 2021-2025 (Software Engineering, 70% Scholarship)</p>
+					<p>FPT University, 2021-2025 (Software Engineering, 70% Scholarship).</p>
 				</div>
 			</section>
 			<section>
 				<h2 class="section-title">Skills</h2>
 				<div class="content">
-					<p><strong>Development Technologies</strong>: Java, C++, C#, TypeScript</p>
-          <p><strong>Design Tools</strong>: Adobe Creative Suite (Photoshop, Illustrator, Premiere Pro, After Effects)</p>
-          <p><strong>Soft Skills</strong>: Public Speaking, Critical Thinking, Problem Solving</p>
+					<p><strong>Languages & Frameworks</strong>: HTML, CSS, JavaScript, Bootstrap, jQuery, Java, Java
+            MVC, SQL, Agile (Scrum).</p>
+          <p><strong>Design Tools</strong>: Figma, SQL Server, Git, Linux (Ubuntu), Jira, Notion,
+            Adobe Photoshop, Excel.</p>
+          <p><strong>Soft Skills</strong>: Public Speaking, Critical Thinking, Problem Solving.</p>
 				</div>
 			</section>
+      <section>
+        <h2 class="section-title">Certificates & Awards</h2>
+        <div class="content">
+          <ul class="stack gap-3">
+            <li>Microsoft Office Specialist World Championship (MOSWC)
+              <br/>
+              <em>National Consolation Prize & Mekong Delta 2nd Prize</em>
+            </li>
+            <li><a href="https://drive.google.com/file/d/1vaFMyjHHi6U-eA-owEe246MKujBdXEwN/view?usp=sharing">Microsoft Excel Expert (Office 2016)</a></li>
+          </ul>
+        </div>
+      </section>
 		</main>
-
+    <div class="">
+      <CallToAction href="/assets/Hua Tien Thanh_CV_en.pdf" className='mx-auto w-80'>
+        <ReadCvLogo size="1.75rem" />
+        View Resumé
+      </CallToAction>
+    </div>
 		<ContactCTA />
 	</div>
 </BaseLayout>
